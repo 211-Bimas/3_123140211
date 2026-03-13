@@ -28,5 +28,9 @@ Proyek ini menggunakan basis **Jetpack Compose** (Android/Desktop). Berikut adal
 
 ### tampilan mobile
 
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/c5e68077-dd50-4983-9cc9-9305a9f5e939" />
 
 ### tampilan dekstop
+
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/eaa8790e-ab92-4704-98a0-b0f658b27715" />
+
