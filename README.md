@@ -1,48 +1,32 @@
-This is a Kotlin Multiplatform project targeting Android, iOS, Desktop (JVM).
+# Tugas Praktikum Minggu 3 - Pengembangan Aplikasi Mobile
 
-* [/composeApp](./composeApp/src) is for code that will be shared across your Compose Multiplatform applications.
-  It contains several subfolders:
-  - [commonMain](./composeApp/src/commonMain/kotlin) is for code that’s common for all targets.
-  - Other folders are for Kotlin code that will be compiled for only the platform indicated in the folder name.
-    For example, if you want to use Apple’s CoreCrypto for the iOS part of your Kotlin app,
-    the [iosMain](./composeApp/src/iosMain/kotlin) folder would be the right place for such calls.
-    Similarly, if you want to edit the Desktop (JVM) specific part, the [jvmMain](./composeApp/src/jvmMain/kotlin)
-    folder is the appropriate location.
+* **Nama : Muhammad Bimastiar**
+* **NIM : 123140211**
 
-* [/iosApp](./iosApp/iosApp) contains iOS applications. Even if you’re sharing your UI with Compose Multiplatform,
-  you need this entry point for your iOS app. This is also where you should add SwiftUI code for your project.
+## Deskripsi Tugas
+Buat aplikasi "My Profile App" menggunakan Jetpack Compose dengan fitur:
+1. **Halaman Profile:**
+   - Header dengan foto profil (circular) dan nama.
+   - Bio/deskripsi singkat.
+   - List informasi: Email, Phone, Location.
+2. **Minimal 3 Composable Functions yang reusable:**
+   - `ProfileHeader`, `InfoItem`, `ProfileCard` (atau custom lainnya).
+3. **Gunakan komponen dasar minimal:** `Column`, `Row`, `Box`, `Card`, `Text`, `Button`, `Image/Icon`.
 
-### Build and Run Android Application
+## Cara Menjalankan Aplikasi (Langkah-langkah)
 
-To build and run the development version of the Android app, use the run configuration from the run widget
-in your IDE’s toolbar or build it directly from the terminal:
-- on macOS/Linux
-  ```shell
-  ./gradlew :composeApp:assembleDebug
-  ```
-- on Windows
-  ```shell
-  .\gradlew.bat :composeApp:assembleDebug
-  ```
+Proyek ini menggunakan basis **Jetpack Compose** (Android/Desktop). Berikut adalah panduan langkah demi langkah untuk menjalankannya:
 
-### Build and Run Desktop (JVM) Application
+1. **Persiapan IDE:** Pastikan Anda menggunakan **Android Studio** versi terbaru (disarankan versi yang mendung Compose Multiplatform jika menjalankan di Desktop).
+2. **Buka Proyek:** Pilih menu `File > Open...` dan arahkan ke folder proyek ini.
+3. **Tunggu Gradle Sync:** Perhatikan bagian pojok kanan bawah IDE. Tunggu hingga proses sinkronisasi Gradle selesai sepenuhnya.
+4. **Jalankan Aplikasi:** - Untuk **Android**: Pilih emulator atau perangkat fisik Android Anda, lalu klik tombol **Run** (segitiga hijau) atau tekan `Shift + F10`.
+   - Untuk **Desktop** (jika dikonfigurasi): Pilih konfigurasi Desktop, lalu tekan tombol **Run**.
+5. **Aplikasi Berjalan:** Jendela aplikasi akan terbuka menampilkan halaman profil pengguna. Anda dapat menggulir halaman (*scroll*) dan menekan tombol *Follow* untuk melihat perubahan *state*. Kode dipastikan dapat di-build tanpa *error*.
 
-To build and run the development version of the desktop app, use the run configuration from the run widget
-in your IDE’s toolbar or run it directly from the terminal:
-- on macOS/Linux
-  ```shell
-  ./gradlew :composeApp:run
-  ```
-- on Windows
-  ```shell
-  .\gradlew.bat :composeApp:run
-  ```
+## Hasil
 
-### Build and Run iOS Application
+### tampilan mobile
 
-To build and run the development version of the iOS app, use the run configuration from the run widget
-in your IDE’s toolbar or open the [/iosApp](./iosApp) directory in Xcode and run it from there.
 
----
-
-Learn more about [Kotlin Multiplatform](https://www.jetbrains.com/help/kotlin-multiplatform-dev/get-started.html)…
+### tampilan dekstop
